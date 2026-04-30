@@ -42,5 +42,5 @@ export const loginAction = async () => {
     }).listen(8001);
 
     console.log('Opening browser for GitHub Authentication...');
-    await open(`${BASE_URL}/auth/github`);
+    await open(`${BASE_URL}/auth/github?source=cli`);
 };
