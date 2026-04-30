@@ -1,0 +1,30 @@
+{
+  "name": "insighta_cli",
+  "version": "1.0.0",
+  "description": "Insighta Labs+ Professional CLI",
+  "bin": {
+    "insighta": "./src/index.js"
+  },
+  "scripts": {
+    "lint": "eslint src/**",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.15.2",
+    "commander": "^14.0.3",
+    "console-table-printer": "^2.15.0",
+    "eslint": "^10.2.1",
+    "jest": "^30.3.0",
+    "open": "^11.0.0",
+    "ora": "^9.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^10.2.1",
+    "jest": "^30.3.0"
+  }
+}
