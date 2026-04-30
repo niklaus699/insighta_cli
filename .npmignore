@@ -1,5 +1,18 @@
+# Private sensitive data
 .env
-node_modules
-src
-tsconfig.json
+credentials.json
+.insighta/
+
+# Development junk
+node_modules/
+npm-debug.log
+.eslintcache
+
+# Local database files
 *.db
+*.sqlite
+
+# Config files the user doesn't need to RUN the app
+tests/
+jest.config.js
+.gitignore
