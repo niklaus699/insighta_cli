@@ -1,5 +1,7 @@
 import axios from 'axios';
 import { getTokens } from './auth.js';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const BASE_URL = process.env.INSIGHTA_API_URL || 'https://web-production-8e847.up.railway.app';
 

@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 import { Command } from 'commander';
-import { loginAction } from './commands/login.js';
+import { loginAction } from './auth.js';
 import { listProfilesAction } from './commands/profiles.js';
+import { whoamiAction } from './auth.js';
 
 const program = new Command();
 
@@ -15,5 +16,9 @@ program.command('login').action(loginAction);
 program.command('profiles:list')
     .option('-g, --gender <type>', 'Filter by gender')
     .action(listProfilesAction);
+
+program.command('whoami')
+    .description('Check the current logged in user')
+    .action(whoamiAction);
 
 program.parse();
