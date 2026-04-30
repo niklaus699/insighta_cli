@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getTokens } from './auth.js';
 
-const BASE_URL = process.env.INSIGHTA_API_URL || 'http://localhost:8000';
+const BASE_URL = process.env.INSIGHTA_API_URL || 'https://web-production-8e847.up.railway.app';
 
 export const api = axios.create({ baseURL: BASE_URL });
 

@@ -5,7 +5,7 @@ import axios from 'axios';
 import open from 'open';
 
 const CONFIG_PATH = path.join(process.env.HOME || process.env.USERPROFILE, '.insighta', 'credentials.json');
-const BASE_URL = process.env.INSIGHTA_API_URL || 'http://localhost:8000';
+const BASE_URL = process.env.INSIGHTA_API_URL || 'https://web-production-8e847.up.railway.app';
 
 export const saveTokens = (tokens) => {
     if (!fs.existsSync(path.dirname(CONFIG_PATH))) {
